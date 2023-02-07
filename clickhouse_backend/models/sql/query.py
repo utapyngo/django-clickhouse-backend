@@ -28,6 +28,6 @@ class Query(query.Query):
         return "\n".join(compiler.explain_query())
 
 
-for query_class in [subqueries.UpdateQuery, subqueries.DeleteQuery]:
-    for attr in ['clone', 'explain']:
-        setattr(query_class, attr, getattr(Query, attr))
+# for query_class in [subqueries.UpdateQuery, subqueries.DeleteQuery]:
+#     for attr in ['clone', 'explain']:
+#         setattr(query_class, attr, getattr(Query, attr))
